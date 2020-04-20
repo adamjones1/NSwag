@@ -23,7 +23,7 @@ namespace NSwag.CodeGeneration.CSharp
             HttpClientType = "System.Net.Http.HttpClient";
             WrapDtoExceptions = true;
             DisposeHttpClient = true;
-            ParameterDateTimeFormat = "s";
+            ParameterDateTimeFormat = "o";
             ParameterDateFormat = "yyyy-MM-dd";
             GenerateUpdateJsonSerializerSettingsMethod = true;
             UseRequestAndResponseSerializationSettings = false;
@@ -85,7 +85,7 @@ namespace NSwag.CodeGeneration.CSharp
         /// </summary>
         public string HttpClientType { get; set; }
 
-        /// <summary>Gets or sets the format for DateTime type method parameters (default: "s").</summary>
+        /// <summary>Gets or sets the format for DateTime type method parameters (default: "o").</summary>
         public string ParameterDateTimeFormat { get; set; }
 
         /// <summary>Gets or sets the format for Date type method parameters (default: "yyyy-MM-dd").</summary>
